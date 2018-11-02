@@ -88,3 +88,4 @@ Os rótulos dos processos serão refeitos (renumerados a partir de 1) caso tenha h
 # Gerar saída em formato pdf
 
 Por meio desta opção é possível gerar um arquivo em formato pdf contendo os dados dos processos de entrada, o gráfico de Gantt resultante, e dos dados calculados para o conjunto de processos durante o escalonamento.
+OBS: Dependência: *itextpdf-5.5.13*
