@@ -25,11 +25,11 @@ Como resultado de sua execução é exibido um gráfico de Gantt representando a esc
 ![Tela Inicial](/img/telaprin.png)
 
 Na tela inicial do aplicativo é possível acionar os seguintes menus: 
-* Escalonador: permite escolher qual o algoritmo de escalonamento será executado. Uma marca será mostrada no menu indicando qual o algoritmo atualmente  selecionado. O default é FIFO;
-* Processos: permite inserir os processos que serão utilizados no escalonamento ou gravá-los em arquivo para uso posterior;
-* Opções: permite alterar opções de interface do aplicativo 
-* Extra: permite exportar os resultados do escalonamento para um  arquivo no formato pdf;
-* Ajuda: informações básicas sobre o funcionamento do aplicativo.
+* **Escalonador**: permite escolher qual o algoritmo de escalonamento será executado. Uma marca será mostrada no menu indicando qual o algoritmo atualmente  selecionado. O default é FIFO;
+* **Processos**: permite inserir os processos que serão utilizados no escalonamento ou gravá-los em arquivo para uso posterior;
+* **Opções**: permite alterar opções de interface do aplicativo 
+* **Extra**: permite exportar os resultados do escalonamento para um  arquivo no formato pdf;
+* **Ajuda**: informações básicas sobre o funcionamento do aplicativo.
 
 Também na tela principal é possível acionar o botão *calcular* que executa o escalonamento de acordo com os parâmetros fornecidos. Como exemplo de resultado de execução, observe a tela a seguir, onde são escalonados sete processos utilizando o algoritmo FCFS.
 O quadro à esquerda exibe os dados de entrada, o quadro à direita exibe os dados resultantes do escalonamento. O gráfico exibe a ordem em que os processos foram escalonados. As cores são aleatórias e podem ser alteradas clicando novamente no botão *calcular*. Com os mesmos dados de entrada pode-se escolher outro algoritmo no menu *Escalonar* e clicar no botão *calcular* para obter o resultado do escalonamento pelo algoritmo escolhido.
@@ -46,11 +46,11 @@ Algoritmo não preempitivo. Escalona os processos por ordem de chegada.
 Algoritmo não preemptivo. Escalona os processos (considerando os processos que já estão na fila de prontos) de acordo com o tempo de duração. Os processos de menor duração são escalonados primeiro.
 * SRT ( *Shortest Remaining Time*: Menor tempo restante primeiro )  
 É a versão preemptiva do SJF. Escalona os processos (considerando os processos que já estão na fila de prontos) de acordo com o tempo de duração restante. Os processos de menor duração restante são escalonados primeiro. Por ser preemptivo, um processo pode ser interrompido caso durante a sua execução chegue um outro processo cuja duração seja menor do que a duração restante deste processo em execução. Duração restante significa o tempo que falta para o processo terminar sua execução.
-* PRIORIDADE NP
+* PRIORIDADE NP:
 Algoritmo não preemptivo. Escalona os processos (considerando os processos que já estão na fila de prontos) de acordo com o seu valor de prioridade. Os processos com maior valor de prioridade são escalonados primeiro.
-* PRIORIDADE P
+* PRIORIDADE P:
 Algoritmo preemptivo. Escalona os processos (considerando os processos que já estão na fila de prontos) de acordo com o seu valor de prioridade. Os processos com maior valor de prioridade são escalonados primeiro. Por ser preemptivo, um processo pode ser interrompido caso durante a sua execução chegue um outro processo cuja prioridade seja maior do que a prioridade deste processo em execução.
-* ROUND ROBIN
+* ROUND ROBIN:
 Algoritmo preemptivo. Escalona os processos (considerando os processos que já estão na fila de prontos) de acordo a ordem de entrada na fila. A cada *Quamtum* de tempo há uma interrupção do processo em execução para que o próximo processo da fila seja executado.
 
 # Entrada e Saída de Processos
@@ -63,11 +63,11 @@ Os arquivos utilizados como entrada e saída são do tipo texto, com a extensão .*
 Os dados de cada um dos processos deve ser colocado em uma linha separada. Cada uma destas linhas deve conter as seguintes informações (em ordem) separadas por ponto-e-vírgula:
 *chegada ; duração ; prioridade*
 
-#Digitação de Processos
+# Digitação de Processos
 
 ![Tela de processos](/img/processos.png)
 
-Nesta tela é possível digitar os processos que serão utilizados como entrada do escalonamento. Caso nenhum processo tenha sido digitado ainda, somente uma linha será apresentada com o rótulo P1 sendo apresentado no nome do processo. Os rótulos são gerados automaticamente não sendo permitido sua edição.
+Nesta tela é possível digitar os processos que serão utilizados como entrada do escalonamento. Caso nenhum processo tenha sido digitado ainda, somente uma linha será apresentada com o rótulo *P1* sendo apresentado no nome do processo. Os rótulos são gerados automaticamente não sendo permitido sua edição.
 Se já houverem dados de processos digitados anteriormente, todos eles serão apresentados para edição, como ilustrado a seguir.
 
 ![Tela de processos](/img/processos2.png)
@@ -88,4 +88,4 @@ Os rótulos dos processos serão refeitos (renumerados a partir de 1) caso tenha h
 # Gerar saída em formato pdf
 
 Por meio desta opção é possível gerar um arquivo em formato pdf contendo os dados dos processos de entrada, o gráfico de Gantt resultante, e dos dados calculados para o conjunto de processos durante o escalonamento.
-OBS: Dependência: *itextpdf-5.5.13*
+**OBS**: Dependência: *itextpdf-5.5.13*
