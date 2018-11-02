@@ -34,7 +34,7 @@ Na tela inicial do aplicativo é possível acionar os seguintes menus:
 Também na tela principal é possível acionar o botão *calcular* que executa o escalonamento de acordo com os parâmetros fornecidos. Como exemplo de resultado de execução, observe a tela a seguir, onde são escalonados sete processos utilizando o algoritmo FCFS.
 O quadro à esquerda exibe os dados de entrada, o quadro à direita exibe os dados resultantes do escalonamento. O gráfico exibe a ordem em que os processos foram escalonados. As cores são aleatórias e podem ser alteradas clicando novamente no botão *calcular*. Com os mesmos dados de entrada pode-se escolher outro algoritmo no menu *Escalonar* e clicar no botão *calcular* para obter o resultado do escalonamento pelo algoritmo escolhido.
 
-![Tela do escalonamento](https://github.com/EmersonPaduan/Escalonar/tree/master/img/telaprin2.png)
+![Tela do escalonamento](/img/telaprin2.png)
 
 # Algoritmos implementados
 
@@ -65,12 +65,12 @@ Os dados de cada um dos processos deve ser colocado em uma linha separada. Cada 
 
 #Digitação de Processos
 
-![Tela de processos](https://github.com/EmersonPaduan/Escalonar/tree/master/img/processos.png "Tela de processos")
+![Tela de processos](/img/processos.png)
 
 Nesta tela é possível digitar os processos que serão utilizados como entrada do escalonamento. Caso nenhum processo tenha sido digitado ainda, somente uma linha será apresentada com o rótulo P1 sendo apresentado no nome do processo. Os rótulos são gerados automaticamente não sendo permitido sua edição.
 Se já houverem dados de processos digitados anteriormente, todos eles serão apresentados para edição, como ilustrado a seguir.
 
-![Tela de processos](https://github.com/EmersonPaduan/Escalonar/tree/master/img/processos2.png "Tela de processos")
+![Tela de processos](/img/processos2.png)
 
 Os seguntes botões são apresentados na tela de edição:
 * **Inserir**: acrescenta uma nova linha para entrada de um novo processo;
