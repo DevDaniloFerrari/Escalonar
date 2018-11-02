@@ -22,7 +22,7 @@ Como resultado de sua execução é exibido um gráfico de Gantt representando a esc
 
 ## Tela Inicial
 
-![Tela Inicial](https://github.com/EmersonPaduan/Escalonar/tree/master/img/telaprin.png "Tela Inicial")
+![Tela Inicial](/img/telaprin.png)
 
 Na tela inicial do aplicativo é possível acionar os seguintes menus: 
 * Escalonador: permite escolher qual o algoritmo de escalonamento será executado. Uma marca será mostrada no menu indicando qual o algoritmo atualmente  selecionado. O default é FIFO;
@@ -34,7 +34,7 @@ Na tela inicial do aplicativo é possível acionar os seguintes menus:
 Também na tela principal é possível acionar o botão *calcular* que executa o escalonamento de acordo com os parâmetros fornecidos. Como exemplo de resultado de execução, observe a tela a seguir, onde são escalonados sete processos utilizando o algoritmo FCFS.
 O quadro à esquerda exibe os dados de entrada, o quadro à direita exibe os dados resultantes do escalonamento. O gráfico exibe a ordem em que os processos foram escalonados. As cores são aleatórias e podem ser alteradas clicando novamente no botão *calcular*. Com os mesmos dados de entrada pode-se escolher outro algoritmo no menu *Escalonar* e clicar no botão *calcular* para obter o resultado do escalonamento pelo algoritmo escolhido.
 
-![Tela do escalonamento](https://github.com/EmersonPaduan/Escalonar/tree/master/img/telaprin2.png "Tela do escalonamento")
+![Tela do escalonamento](https://github.com/EmersonPaduan/Escalonar/tree/master/img/telaprin2.png)
 
 # Algoritmos implementados
 
